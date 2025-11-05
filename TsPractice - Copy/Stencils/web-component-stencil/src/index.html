@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/web-component-stencil.esm.js"></script>
+    <script nomodule src="/build/web-component-stencil.js"></script>
+    <style>
+      button{
+        position: absolute;
+
+        margin-left: 50%;
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+       
+      }
+    </style>
+  </head>
+  <body>
+
+    <button type="button" id="drawer-id">Click to open the side drawer</button>
+    <am-side-drawer titlee="this is menu">
+      <nav>
+        <div class="link">
+          <a href="/">A link</a>
+          <p></p>
+          <a href="/">Another link</a>
+          <p></p>
+          <a href="/">Third link</a>
+        </div>
+      </nav>
+      <am-side-content>this is side content (slot) </am-side-content>
+    </am-side-drawer>
+
+    <script>
+      const drawerbutton = document.querySelector('#drawer-id');
+      const menu = document.querySelector('am-side-drawer');
+      drawerbutton.addEventListener('click',()=>{
+          if(!menu.open){
+            menu.open=true;
+          }
+      })
+       
+      
+      setTimeout(() => {
+        menu.title = 'it changed';
+      }, 3000);
+    </script>
+  </body>
+</html>

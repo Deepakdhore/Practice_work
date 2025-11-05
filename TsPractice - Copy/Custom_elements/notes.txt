@@ -1,0 +1,37 @@
+Stencils.js
+
+why :
+	encapsulation:
+		easy to undersatand
+		separation of concerns
+	reusable:
+		dont worry about overlapping logic
+		once writeing 
+	sharable
+	
+diff b/w frameworks(REACT, ANGULAR, VUE, plugins, etc:
+	-not reusable if using in different tech stack
+	-no need to import unecissary plugin files
+	--
+	-just vanilla js
+	-less shipping code
+
+custom element:
+	-custsom block of html code that can be invked using custom tag.
+shadow dom:
+	-separate/isolated custo dom featuring isolation of css,js,ts scritps from the main dom.
+html Template:
+
+ES Module:
+
+----------------web component lifecylce----------------
+EVENT ---------------WHAT_HAPPENS { WHY }
+
+element creted -> constructor(){basic initialization} 
+
+element attached to DOM -> connectedCallback(){DOM initalization}
+
+element detached from DOM -> disconnectedCallback(){Cleanup Work}
+
+Observed Attribute updated -> attributeChangedCallback(){Update data + DOM}
+

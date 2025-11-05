@@ -1,0 +1,19 @@
+aside{
+   
+    border: 1px solid black;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 30rem;
+    max-width: 80%;
+    height: 100vh;
+    background-color: rgb(202, 195, 185);
+    box-shadow: 0 2px 8px rgb(184, 159, 159);
+   
+}
+header{
+    background-color: black;
+}
+h1{
+    color: aliceblue;
+}
