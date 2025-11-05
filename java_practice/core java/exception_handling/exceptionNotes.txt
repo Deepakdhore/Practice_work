@@ -1,0 +1,29 @@
+        ---------------------basic work flow of an exception handling------------------------
+* When the JVM (Java Virtual Machine) executes your code inside a try block and an exception occurs, it:
+        - Creates an exception object (e.g., ArithmeticException, NullPointerException, etc.).
+        - Searches for a matching catch block to handle that exception.
+        - Transfers control to the first matching catch block.
+        - If no match is found, the exception is propagated up the call stack.
+
+If it's never caught, the JVM handles it, typically printing a stack trace and exiting the program.
+
+--exception hiracrchy--
+java.lang.Object(serializable(objct to byte(file transfer,network transfer)))   --------serializable is not implemented by(Thread/java)
+   └── java.lang.Throwable
+         ├── java.lang.Error        (Serious system-level problems)
+         └── java.lang.Exception    (Typical application-level problems)
+               ├── Checked Exceptions
+               └── Unchecked Exceptions (RuntimeException and its subclasses)
+
+--TYPES--
+        a) Checked Exceptions
+        Checked at compile-time.
+                --Must be handled or declared using throws.
+                (IOException, SQLException, ClassNotFoundException);
+
+
+        b) Unchecked Exceptions (RuntimeExceptions)
+        Checked at runtime.
+                --Not required to be caught or declared.
+                (NullPointerException, ArrayIndexOutOfBoundsException, ArithmeticException,
+                IllegalArgumentException)
