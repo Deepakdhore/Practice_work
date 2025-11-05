@@ -1,0 +1,14 @@
+.Frame{
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: fit-content;
+    height: fit-content;
+      border-radius: 10px;
+}
+.Frame>*{
+   background-color: azure;
+   width: fit-content;
+   height :fit-content;
+    padding: 20px;
+    border:1px solid black;
+}

@@ -1,0 +1,17 @@
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.jsx";
+import InputField from "./Components/InputFeild/Inputfield.jsx";
+import { BrowserRouter } from "react-router-dom";
+import Dark_light from "./Components/dark_light_switch/Dark_light.jsx";
+import ThemeProvider from "./Context/ThemeProvider.jsx";
+import Settings from "./Components/settings/Settings.jsx";
+
+createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
+  </BrowserRouter>
+);

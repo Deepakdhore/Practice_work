@@ -1,0 +1,145 @@
+import React, { useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
+import Button from "../Button/Buttons";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import LoginPage from "../../Pages/LoginPage";
+import Dark_light from "../dark_light_switch/Dark_light";
+
+export default function LoginForm() {
+  const navigate = useNavigate();
+  const [usernameorEmail, setusernameorEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [disable, setdisable] = useState(false);
+  const [showPassword, setShowPassword] = useState(false); // new state
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // prevent page refresh
+    setdisable(true);
+
+    if (!usernameorEmail || !password) {
+      toast.error("Please fill in both fields!");
+      setTimeout(() => {
+        setdisable(false);
+      }, 3000);
+    } else {
+
+      try {
+        const res = await axios.post(`http://localhost:5184/api/Users/login`, {
+          usernameorEmail: usernameorEmail,
+          password: password,
+        });
+
+        if (res.status == 200) {
+          toast.success("Login successfull");
+          navigate("/authorDashboard");
+        } 
+      } 
+      catch (error) {
+        
+        setusernameorEmail("");
+        setPassword("");
+
+        if(error.response.status=== 401){
+
+          toast.error("Invalid username or password");
+        }
+        else{
+          toast.error("Something went wrong, try again later....");
+        }
+      }
+
+      setTimeout(() => {
+        setdisable(false);
+      }, 3000);
+    }
+  };
+
+  return (
+    <>
+    <div className="flex items-center justify-center w-[350px] absolute top-[50%] left-[50%] transform -translate-1/2 z-100">
+      {/* Toaster must be at the root of your component tree */}
+      <Toaster position="top-center" reverseOrder={false} />
+
+      <div className="w-full max-w-sm p-6 bg-white rounded-2xl shadow-md">
+        <h2 className="!text-3xl font-extrabold  text-center mt-4 ">Sign In</h2>
+
+        <form onSubmit={handleSubmit} className="space-y-4 p-4">
+          {/* usernameorEmail */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700">
+              Email / Username
+            </label>
+            <input
+              type="text"
+              value={usernameorEmail}
+              onChange={(e) => setusernameorEmail(e.target.value)}
+              placeholder="Enter your usernameorEmail"
+              className="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
+
+          {/* Password */}
+          <div className="py-3">
+            <label className="block text-sm font-medium text-gray-700">
+              Password
+            </label>
+            <input
+              type={showPassword ? "text" : "password"} // toggle type
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Enter your password"
+              className="w-full mt-1 px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+
+            {/* Show/Hide Password Checkbox */}
+            <div className="mt-2 flex items-center space-x-2 py-2 ">
+              <input
+                type="checkbox"
+                id="showPassword"
+                checked={showPassword}
+                onChange={() => setShowPassword(!showPassword)}
+                className="h-4 w-4 text-blue-600 border-gray-300 rounded"
+              />
+              <label
+                htmlFor="showPassword"
+                className="text-sm text-gray-700 !pl-2  "
+              >
+                Show Password
+              </label>
+            </div>
+          </div>
+
+          {/* Submit Button */}
+          <div className="flex items-center justify-center ">
+            <Button
+              type="submit"
+              label={"Sign in"}
+              variant="primary"
+              disabled={disable}
+            />
+          </div>
+        </form>
+
+        <p className=" text-center text-sm text-gray-600">
+          Don’t have an account?{" "}
+          <a href="/" className="text-blue-600 hover:underline">
+            Sign Up
+          </a>
+        </p>
+      </div>
+    </div>
+      <LoginPage/>
+      
+      
+      </>
+  );
+}
+
+////////////////////// Read Me //////////////////////
+/* herewe can login using either " username or email ", backend will handle the input sent
+  meaning u can send an one of them or both of them and still it will work
+  !! without explicitly mentioning as email or username
+  rest of thefeature consits of password hidden funtion, some desgin enhancements etc.
+*/
+////////////////////// Read Me //////////////////////
