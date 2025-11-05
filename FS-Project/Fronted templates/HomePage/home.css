@@ -1,0 +1,108 @@
+*{
+border:1px solid black;
+    margin: 1px;
+    box-sizing: border-box;
+}
+.content{
+    background-color: rgba(248, 236, 236, 1);
+    display: flex;
+    justify-content: flex-start;
+}
+button{
+   background-color: white ;
+}
+section_mid{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    padding:10px;
+    height: 100;
+
+}
+section_left{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section_right{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+}
+
+feed_section{
+    border: solid blue;
+    background-color:rgb(221, 235, 235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media{
+    width: 600px;
+    height: 400px;
+    
+    background-color: burlywood;
+}
+.reactions{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    width: inherit;
+  
+   
+}
+.feeds{
+    height: 600px;
+    border: solid yellow;
+    overflow-y: scroll;
+    scrollbar-width: 0px;
+}
+.reactions>div{
+      margin-right: 10px;
+}
+
+
+.bell{
+    display: flex ;
+    justify-content: center;
+}
+
+.comment{
+    padding-inline: 10%;
+    margin: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+logo_section{
+    display: flex;
+    align-items: center;
+}
+.profile_logo{
+    display: flex;
+    border-radius: 30px;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+}
+nav_section{
+    margin-top: 20px;
+}
+.nav_bar{
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.nav_bar>div{
+    border-radius: 15px;
+    background-color: rgb(226, 216, 255);
+}
+
+
+

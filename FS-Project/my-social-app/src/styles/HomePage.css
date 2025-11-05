@@ -1,0 +1,63 @@
+:root {
+  --bg: #f0f2f5;
+  --card: #fff;
+  --shadow: rgba(0,0,0,0.1);
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: var(--bg);
+}
+
+.page {
+  padding: 1rem;
+}
+.section-mid{
+      background: linear-gradient(to bottom, #5a9bd8, #6e00ff);
+      width:-webkit-fill-available;
+      padding-inline: 50px;
+      border-radius: 10px;
+}
+
+.feed-list {
+  max-width: 600px;
+  margin: 0 auto;
+  overflow-y: auto;
+}
+
+.feed-card {
+  background: var(--card);
+  margin: .5rem 0;
+  padding: .75rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--shadow);
+}
+.media-placeholder {
+  height: 200px;
+  background: burlywood;
+  border-radius: 4px;
+}
+
+.post-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex; flex-direction: column;
+  gap: .75rem;
+}
+
+.post-form img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--shadow);
+}
+
+.filters button {
+  margin-right: .5rem;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}

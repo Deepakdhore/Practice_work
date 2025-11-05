@@ -1,0 +1,61 @@
+.section-left {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+    background: linear-gradient(to bottom, #5a9bd8, #c3c3c3);
+    box-shadow: 2px 2px 9px 10px rgba(0, 0, 0, 0.1);
+  }
+.logo-section{
+  border-radius: 30px;
+  background-color: rgb(66, 151, 226);
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 5px 0px 3px rgba(0, 0, 0, 0.1);
+}
+
+.profile-logo {
+  display: flex;
+  border-radius: 30px;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  box-shadow: 0px 5px 0px 3px rgba(0, 0, 0, 0.1);
+  
+}
+.profile-logo img{
+    width: 100%;
+  height: 100%;
+  object-fit: cover;       /* 👈 Key: zoom and fill */
+  display: block;
+  overflow: hidden;
+}
+
+.nav-section {
+  border-radius: 20px;
+  background-color: azure;
+  margin-top: 20px;
+}
+.nav-bar {
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.nav-bar > div {
+  border-radius: 15px;
+  background-color: rgb(226, 216, 255);
+}
+.post-button{
+  
+  all: unset;
+ 
+}
