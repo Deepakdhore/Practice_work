@@ -1,0 +1,16 @@
+[
+  { "month": "January", "product": "Shoes", "sales": 120, "profit": 30, "temperature": 15 },
+  { "month": "February", "product": "Hats", "sales": 80, "profit": 40, "temperature": 17 },
+  { "month": "March", "product": "Books", "sales": 150, "profit": 20, "temperature": 20 },
+  { "month": "April", "product": "Caps", "sales": 100, "profit": 65, "temperature": 25 },
+  { "month": "May", "product": "Bags", "sales": 200, "profit": 29, "temperature": 30 },
+  { "month": "June", "product": "Shoes", "sales": 170, "profit": 57, "temperature": 33 },
+  { "month": "July", "product": "Watches", "sales": 220, "profit": 50, "temperature": 34 },
+  { "month": "Auguest", "product": "Bracelets", "sales": 180, "profit": 50, "temperature": 33 },
+  { "month": "September", "product": "Gogles", "sales": 210, "profit": 48, "temperature": 30 },
+  { "month": "October", "product": "Pens", "sales": 130, "profit": 45, "temperature": 27 },
+  { "month": "November", "product": "Papers", "sales": 250, "profit": 90, "temperature": 22 },
+  { "month": "Decmeber", "product": "Cream", "sales": 190, "profit": 95, "temperature": 18 }
+]
+
+

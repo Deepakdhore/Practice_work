@@ -1,0 +1,10 @@
+first: when recieced data
+we need at least three charts:
+    :SALES/date
+    :Sales/users
+    :Sales/Temperatures
+    
+At least three types of graphs:
+    :BAR
+    :line
+    :pie

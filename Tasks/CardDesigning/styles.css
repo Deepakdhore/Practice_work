@@ -1,0 +1,60 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+article{
+    margin:12px;
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+}
+.card{
+    background-color: aqua;
+    display: grid;
+    width: 30%;
+
+    padding:5px;
+}
+
+.image{
+    background-color: black;
+    width: auto;
+    display: grid;
+    height: auto;
+    padding: 2px;
+    border-radius: 5px;
+}
+img{
+    width:100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.reference{
+    padding: 2px;
+    display: flex;
+    gap: 10%;
+}
+
+.reference p{
+    border-style: solid;
+    border-radius: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.title p{
+    font-size: large;
+    font-weight: bold;
+    padding: 10px;
+
+}
+
+.description{
+    padding: 10px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}

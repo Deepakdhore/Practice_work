@@ -1,0 +1,28 @@
+article>div>pre{
+    padding: 10px;
+    border: 5px solid burlywood;
+    margin: 100px;
+}
+p{
+    padding: 10px;
+    margin : 100px;
+    border: 5px solid black;
+}
+
+#ardiv{
+    padding: 10px;
+}
+
+article{
+    margin: 20px;
+}
+
+pre{
+    font-size:x-small;
+    font-weight:bolder;
+    font-style: italic;
+    line-height:  3;
+    letter-spacing:2px;
+    
+}
+

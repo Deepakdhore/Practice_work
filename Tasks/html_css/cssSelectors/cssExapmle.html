@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CSS selector</title>
+
+    <style>
+
+        /*elemenet selector*/        
+        h1{
+            color: blue;
+        }
+
+        /*class selector*/
+        .red{
+            background-color: red;
+        }
+
+        /*id selector*/        
+        #gray{
+            background-color: gray;
+        }
+
+        /*child selector*/
+        article>div>pre{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        article  p{
+            color: blue;
+        }
+
+        /*pseudo selectors*/
+        a:active{
+            color: green;
+        }
+
+        h1:nth-child(2){
+            font-family:monospace;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="red" data-x="a">
+            this is header <section></section>
+        </h1>
+        <h1 id="gray">
+            this is another header
+        </h1>
+    </header>
+    <main>
+        <article>
+            <div class="red" id="ardiv">
+                <pre>
+                    Lorem ipsum dolor sit amet, 
+                    consectetur adipisicing elit.
+                    Necessitatibus veritatis quam omnis 
+                    earum voluptas laborum minus recusandae 
+                    odit illum distinctio. 
+                    Nostrum dicta quia veritatis reprehenderit. 
+                    Natus reiciendis tenetur adipisci atque?
+                    
+                </pre>
+                <p>
+                    this is another paragraph
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis sint voluptatibus id commodi, recusandae reiciendis impedit beatae. Modi perferendis fuga odio magni doloribus aspernatur ipsa ipsam sunt excepturi. Consequuntur, ipsum?
+                </p>
+            </div>        
+        </article>  
+        <div>
+            <a href="googleee.com">this is goolge.com link</a>
+
+        </div>
+    </main>
+
+    <footer>
+        <h2>this is footer section</h2>
+    </footer>
+  
+</body>
+</html>

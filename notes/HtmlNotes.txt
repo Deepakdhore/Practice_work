@@ -1,0 +1,59 @@
+html
+-cline brower server
+-structure
+-link
+-h1....
+ -tag
+ -attribute
+ -<a> href/target="_blank",_parent,_top,framename
+* media tags(inline elmenets)
+	-<img> tag /src=""/alt=""/
+	-<video>
+	-<audio>
+* table - td/tr/th/ rowsapn column span
+* lists- ol and ul
+* core web vitals 
+	-seo(serach engine optimisation/ faster>slower load)
+		-cls (cumulative layout shift =>shit of layout elements as the page loads)
+		-lcp (largest contentful paint)=> how long does the largest element loads 2.5 good<bad)
+		-fid (first input delay =>how long for input processing 100ms g<b
+		 
+* form
+	-lable
+	-input checkbox radio
+	-text area
+	-select
+* inline and block element
+* id/classes:
+	-id is unique to element (#id) also used for scrolling (url + #id)
+	-class can be multiple for each elemnt(adding or ggrouping features of a class) (.class) 
+* <pre> .....as it is </pre>
+
+*semeantics header/main/article/footer
+
+***css***
+	
+* if no css then userAgent css
+	__specificity__
+*css selector ( !important > inline> id_selector > 
+				Class/attribute_se..> Element > Universal (if same = based on position))
+element / class/id / ATTRIBUTE_SELECTOR(html =>data-x="abc" /css[dat]) / pseudo(active,hover,first-child)
+
+*box model( margin>border>padding>content )
+	-box-sizing= ( content+padding+border )
+	-margin collapse
+		-when 2 successive elements have margin 
+		the one with big margin will be considered as the effective margin between them.
+*  font-family  / letter-spacing  /text-decoration-/ : underline / 
+	-weight					-color
+	-size 					-indednt
+						-style
+						   :dotted
+	*--handlening overflow content
+* (text-overflow : ellipses(nextline without breaking) 
+	/ overflow: hidden(hides extra)
+	/ word-break(breaks extra word to nextline) same task differnt view
+
+	*--positioning of text	
+* text-align
+*SIZE===(px, vh/vw(window), rem(Root reletive), em(parent Reletaive), vmin(depends whih aspect is small 

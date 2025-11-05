@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Sales Chart App</title>
+    <link rel="stylesheet" href="/chart_app.2cdaf7bc.css">
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <div></div>
+        <h1>Monthly Sales Chart App</h1>
+        <div></div>
+      </div>
+    </header>
+    <div class="selector_section">
+      <div class="selector-left"></div>
+      <div class="selector_m">
+        <label for="x-category-select">Select Lable:</label>
+        <select id="x-category-select">
+          <option value="month">Month</option>
+          <option value="product">Product</option>
+        </select>
+        <label for="y-category-select">Select Category:</label>
+        <select id="y-category-select">
+          <option value="sales">Sales</option>
+          <option value="profit">Profit</option>
+          <option value="temperature">Temperature</option>
+        </select>
+
+        <label for="chart-type-select">Select Chart Type:</label>
+        <select id="chart-type-select">
+          <option value="bar">Bar</option>
+          <option value="line">Line</option>
+          <option value="pie">Pie</option>
+          <option value="doughnut">Doughnut</option>
+          <option value="radar">Radar</option>
+        </select>
+      </div>
+
+      <div class="selector_r"></div>
+    </div>
+
+    <!-- Canvas for Chart.js -->
+    <div class="chart_section">
+      <div></div>
+      <div class="canvas_div">
+        <canvas id="salesChart" width="400px" height="400px"></canvas>
+      </div>
+      <div></div>
+    </div>
+
+
+    <!-- Chart.js via CDNs -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Your compiled TypeScript -->
+    <script type="module" src="/chart_app.0f289648.js"></script>
+  
+
+</body></html>

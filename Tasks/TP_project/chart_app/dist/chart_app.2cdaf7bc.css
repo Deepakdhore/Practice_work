@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0ff;
+}
+
+h1 {
+  color: #060b04;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+label {
+  font-family: sans-serif;
+}
+
+canvas {
+  z-index: 99px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 1px 9px 19px 15px #b127271a;
+}
+
+.heading {
+  justify-content: center;
+  margin: 10px;
+  display: flex;
+}
+
+.chart_section {
+  border-radius: 10px;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+}
+
+select {
+  border-radius: 10px;
+  margin: 0 10px;
+  padding: 5px;
+}
+
+.selector_section {
+  justify-content: space-around;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.selector_m {
+  background-color: #f49090;
+  border-radius: 15px;
+  padding-block: 5px;
+  padding-inline: 5px;
+  box-shadow: 0 0 10px #0000001a;
+}
+/*# sourceMappingURL=chart_app.2cdaf7bc.css.map */

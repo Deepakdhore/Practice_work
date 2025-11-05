@@ -1,0 +1,1 @@
+{"mappings":"AAAA","sources":["src/style.css"],"sourcesContent":["canvas {\r\n  border: 1px solid #ddd;\r\n  background-color: #fff;\r\n  box-shadow: 0 0 10px rgba(0,0,0,0.1);\r\n}"],"names":[],"version":3,"file":"chart_app.725e94f9.css.map","sourceRoot":"/__parcel_source_root/"}

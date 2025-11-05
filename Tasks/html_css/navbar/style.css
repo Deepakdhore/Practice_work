@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main .left{
+    width: 3%;
+    
+}
+.main{
+    background-color: purple;
+    display: flex;
+    max-width: 99%;
+    margin: auto;
+    border-radius: 3px;
+    
+    
+}
+.main .right{
+ display: flex;
+ width: 90%;
+ margin: auto;
+ text-align: center;
+ align-items: center;
+ justify-content: space-between;
+
+}
