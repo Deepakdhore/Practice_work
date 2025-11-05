@@ -1,0 +1,43 @@
+html
+-cline brower server
+-structure
+-link
+-h1....
+ -tag
+ -attribute
+ -<a> href/target="_blank",_parent,_top,framename
+* media tags(inline elmenets)
+	-<img> tag /src=""/alt=""/
+	-<video>
+	-<audio>
+* table - td/tr/th/ rowsapn column span
+* lists- ol and ul
+* core web vitals 
+	-seo(serach engine optimisation/ faster>slower load)
+		-cls (cumulative layout shift =>shit of layout elements as the page loads)
+		-lcp (largest contentful paint)=> how long does the largest element loads 2.5 good<bad)
+		-fid (first input delay =>how long for input processing 100ms g<b
+		 
+* form
+	-lable
+	-input checkbox radio
+	-text area
+	-select
+* inline and block element
+* id/classes:
+	-id is unique to element (#id) also used for scrolling (url + #id)
+	-class can be multiple for each elemnt(adding or ggrouping features of a class) (.class) 
+* <pre> .....as it is </pre>
+
+*semeantics header/main/article/footer
+
+**css**
+
+*css selector
+	element/class/id/pseudo(active,hover,first-child)
+*box model
+	margin>border>padding>content
+	box-sizing= margin+border
+
+
+

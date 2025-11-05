@@ -1,0 +1,14 @@
+hosting extensions:
+
+
+Using extension methods on:
+
+IServiceCollection
+IApplicationBuilder
+WebApplicationBuilder
+IHostBuilder
+hosting extensions
+
+Almost always static class + static method + this keyword.
+
+Syntax: public static IServiceCollection AddX(this IServiceCollection services){....}

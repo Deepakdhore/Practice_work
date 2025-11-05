@@ -1,0 +1,12 @@
+Today in Spring:
+
+@Primary 
+@Component
+@ComponetScan
+-Practiced constructor and setter injection
+-constructor injection when using immutable object/beans(Records).
+-setter injection when using class with @component
+@qualifier
+context.getBean("_name_of_the_bean");
+Arrays.stream(context.getBeanDefinationNames()).forEach(( LOG/PRINT/do somthing with all tthe names of beans ))
+@Autowired is not necessary for Constructor injection

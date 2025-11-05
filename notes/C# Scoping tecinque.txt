@@ -1,0 +1,15 @@
+C# Scoping tecinque
+
+1. whar are variables type in C#
+2. what are loops in C#
+3. what is out key word
+4. what are the collections
+5. what is deligate
+6. All OOPs in C#
+7. Reflection in C#
+8. Generics in C#
+
+Scopes : do not inject service into a service which has Longer lifetime than it
+
+--- bad#  singleton( transient/ scoped )
+--- good# scoped( singleton ) |  transient ( singleton/scoped )

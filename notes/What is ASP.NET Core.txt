@@ -1,0 +1,31 @@
+What is ASP.NET Core
+
+How a web API works
+
+Controllers and Actions
+
+Basic Routing ([HttpGet], [HttpPost], etc.)
+
+Creating simple Models (C# classes)
+
+Returning JSON data from controllers
+
+Introduction to Dependency Injection (using constructor injection)
+
+Basic CRUD operations using EF Core
+
+[authorise filters] basics
+
+DbContext basics
+
+Connecting to a database using connection strings
+
+Creating and running Migrations
+
+Understanding appsettings.json
+
+understanding programe.cs file
+
+CORS
+
+One-to-Many Relationships in EF Core 

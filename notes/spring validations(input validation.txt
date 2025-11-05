@@ -1,0 +1,26 @@
+spring validations(input validations) @Valid / @NotBlank/ @Email/ @Min
+
+@RestController
+public class UserController {
+
+    @PostMapping("/user")
+    public ResponseEntity<String> createUser(@Valid @RequestBody UserDTO user, BindingResult result) {
+        if (result.hasErrors()) {
+            return ResponseEntity.badRequest().body("Validation failed!");
+        }
+        return ResponseEntity.ok("User is valid!");
+    }
+}
+public class UserDTO {
+
+    @NotBlank(message = "Name is required")
+    private String name;
+
+    @Email(message = "Invalid email")
+    private String email;
+
+    @Min(18)
+    private int age;
+
+    // Getters and Setters
+}

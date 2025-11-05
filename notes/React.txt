@@ -1,0 +1,17 @@
+React
+
+-is a library
+we need to write a div in the main html page and implement it by giving it an id:
+<body>
+	<div id="root"></div>
+	<script src="/index.jsx" type="module"></script>
+</body>
+
+here root is the id we will use to render our react component:
+
+----preliminaries----
+
+-we need to
+	import { createRoot } from "react-dom/client"
+							 ---- (here we use this create a root which is the used to 								render function/functions to Group and render as a									 single DIV)
+

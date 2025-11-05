@@ -1,0 +1,104 @@
+javaScript
+
+- let const var
+	-const fixed value variable
+	-let functional scope
+	-var global scope 
+	prefer not to use var as var is global scope and can be changes from anywhere
+-"use strict" to say that iam using nly new version of javascript
+-alert
+-ECMA STANDARDS (=/==/===)
+	-number
+	-bigint
+	-string   ->""
+	-Boolean  ->true/false
+	-null(OBJECT)->Standalone Value
+	-undefined(UNDEFINED)
+	-symbol   ->Unique
+	-object
+-console.log(1+2+"2") =>32 
+	use brackets-
+			console.log((1+2)+"2")
+-non primitive return type is (OBJECT)
+
+Return type of variables in JavaScript
+1) Primitive Datatypes
+       Number => number
+       String  => string
+       Boolean  => boolean
+       null  => object
+       undefined  =>  undefined
+       Symbol  =>  symbol
+       BigInt  =>  bigint
+
+2) Non-primitive Datatypes
+       Arrays  =>  object
+       Function  =>  function
+       Object  =>  object
+
+Typescript:
+TYPES:
+	Type	Description					Example
+	number	All numbers (integers, floats)			let age: number = 25;
+	string	Text values					let name: string = "Deepak";
+	boolean	true or false					let isOnline: boolean = true;
+	any	Can be anything (turns off type safety)		let data: any = 42;
+	unknown	Like any, but safer—you must check type first	let value: unknown = "hello";
+	void	Used for functions that return nothing		function log(): void { console.log("Hi"); }
+	null	A value that is explicitly nothing		let x: null = null;
+	undefined	A variable not assigned a value		let y: undefined = undefined;
+
+
+Interfaces:
+	contract/describing object structure(properties and types)
+	-? 
+if given no compulsory to define that property
+	interface Product {
+  	name: string;
+  	price: number;
+  	description?: string;
+	}
+
+	-"readonly" (cannot define this property only for reference cannot assing any value
+	-"Decribing shape of a function"
+FUNcTION:
+	
+
+Array: forEach((value:?)=>{
+	console.log(value)
+	}				? not needed(Contextual Typing)
+	
+Classs & object
+
+class A{
+	  id:number;
+	  constructor(){
+        this.id=10;
+      }
+	}
+
+	class B extends A{
+        constructor(){
+            super();
+        }
+	  printName():number{
+	   return this.id;
+	}
+	}
+
+const obj1=new B();
+console.log(obj1.printName());
+
+Spread and rest operator:
+	here same operator for both(...)
+spread == arr[1,2,3] ---> console.log(...arr,5)=>1 2 3 4
+rest == 
+	const person = {
+		name:"max";
+		id:10	
+	}
+	const newPerson = {
+		...person,
+		age:10
+	}
+

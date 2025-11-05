@@ -1,0 +1,14 @@
+Tasks
+git hub<
+-stashing
+-checkout
+-comiits
+-branching.
+
+
+Hosting extension
+///string custom method (string with length and charecters) using extension.
+///multiple inheritance of same interface how refer and configure.
+///auto mapper  , configure mock json and write some example.
+
+///csprog ,appsettings, different congif file,refrenccing,modules, server.config (main) , and module specific config.

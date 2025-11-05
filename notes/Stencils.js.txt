@@ -1,0 +1,30 @@
+Stencils.js
+
+
+why :
+	encapsulation:
+		easy to understand
+		separation of concerns
+	reusable:
+		dont worry about overlapping logic
+		once writing 
+	sharable
+	
+diff b/w frameworks(REACT, ANGULAR, VUE, plugins, etc:
+	-not reusable if using in different tech stack
+	-no need to import unnecessary plugin files
+	--
+	-just vanilla js
+	-less shipping code
+
+custom element:
+	-custsom block of html code that can be invked using custom tag.
+
+shadow dom:
+	-separate/isolated custo dom featuring isolation of css,js,ts scritps from the main dom.
+	shadow dom application
+	-customElement( constructor{ this.attachShadow({ model:'open' }) })-->on inscpect element{ #shadow root only seperating from real dom}
+html Template:
+
+ES Module:
+	
